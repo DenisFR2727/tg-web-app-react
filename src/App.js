@@ -1,13 +1,14 @@
 import { useEffect } from "react";
-import "./App.css";
+
 const tg = window.Telegram.WebApp;
 
+import "./App.css";
 function App() {
   const onClose = () => {
     tg.close();
   };
   useEffect(() => {
-    
+    tg.ready();
   }, []);
   return (
     <div className="App">
