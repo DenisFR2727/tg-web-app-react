@@ -71,7 +71,7 @@ const ProductList = () => {
       totalPrice: getTotalPrice(addedItems),
       queryId,
     };
-    fetch("http://85.119.146.179:8000/web-data", {
+    fetch("http://localhost:8000/web-data", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -112,7 +112,7 @@ const ProductList = () => {
   return (
     <div className={"list"}>
       {products.map((item) => (
-        <ProductItem product={item} onAdd={onAdd} className={"item"} />
+        <ProductItem product={item} onAdd={onAdd} className="item" />
       ))}
     </div>
   );
