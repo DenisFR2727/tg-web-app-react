@@ -49,19 +49,19 @@ function Form() {
     setSubject(e.target.value);
   };
   return (
-    <div className={"form"}>
+    <div className="form">
       <h3>Введите ваши данные</h3>
       <input
-        className={"input"}
+        className="input"
         type="text"
         placeholder={"Страна"}
         value={country}
         onChange={onChangeCountry}
       />
       <input
-        className={"input"}
+        className="input"
         type="text"
-        placeholder={"Улица"}
+        placeholder="Улица"
         value={street}
         onChange={onChangeStreet}
       />
