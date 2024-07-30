@@ -1,10 +1,9 @@
 import React from "react";
 import { useTelegram } from "../hooks/useTelegram";
-
+const tg = window.Telegram.WebApp;
 import "./Header.css";
 
 function Header() {
-  const tg = window.Telegram.WebApp;
   const { user, onClose } = useTelegram();
 
   useEffect(() => {
